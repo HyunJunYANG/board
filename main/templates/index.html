@@ -1,0 +1,89 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Work Shy Fop</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="iFrame" />
+<link href="stylesheet.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
+<meta charset="UTF-8">
+</head>
+
+<body>
+{% block index %}
+<div id="center">
+
+<a href="{% url 'main.views.index' %}"><div id="header">
+</div></a>
+
+<div id="content">
+
+<div id="sidebar">
+
+<div class="nav">
+<ul class="nav_list">
+<li class="li_nav_header"><a href="#\"></a></li>	
+<li class="li_nav_body"><a href="{% url 'main.views.board_index' %}">게시판1</a></li>
+<li class="li_nav_body"><a href="{% url 'main.views.board_index' %}">게시판2</a></li>
+<li class="li_nav_body"><a href="{% url 'main.views.board_index' %}">게시판3</a></li>
+<li class="li_nav_footer"><a href="#"></a></li>		
+</ul>
+</div>
+
+<div class="nav">
+<ul class="nav_list">
+<li class="li_nav_header"><a href="#"></a></li>	
+<li class="li_nav_body"><a href="#">Archive 11-16</a></li>
+<li class="li_nav_body"><a href="#">Archive 1-10</a></li>
+<li class="li_nav_footer"><a href="#"></a></li>		
+</ul>
+</div>
+
+<div class="sidebar_header"></div>
+<div class="sidebar_body">
+<img src="assets/image.jpg" alt="Image Thumbnail" />
+</div>
+<div class="sidebar_footer"></div>
+
+</div>
+{% endblock %}
+{% block content %}
+<div class="content_header"></div>
+<div class="content_body">
+<h1>Artica - Simple CSS and xHTML</h1>
+<h2>A clean, fresh design that is quick to load.</h2>
+<p><b><a href="mailto:callumrimmer@iframe.co.uk">Author</a></b></p>
+<p>My name is Callum Rimmer and I run a web software company in Bath, England. We have created a simple content management system and hosting packagefor small companies and individuals called <a href="http://www.personal-web-design.com">iFrame</a>.</p>
+<p>iFrame is made to as easy to use as possible whilst giving you the flexibilty to design your site how 
+you like. You can use any of the free designs on <a href="http://www.oswd.org">OSWD.org</a> or <a href="http://www.openwebdesign.com">openwebdesign.com</a> as an iFrame template.
+</p>
+<p><span class="red">&gt;&gt;</span> I'd appreciate keeping the <a href="http://www.personal-web-design.com">iFrame backlink</a> in the footer if you use this template.	
+</p>
+
+
+<p><b class="red"><a href="#">Usage</a></b></p>
+<p>This design is good for anyone who wishes to display images or photos on the homepage of there site. If you have a blog or photography site then this is a great medium for displaying content. I would appreciate you keeping the iFrame backlink in the footer. The image is from <a href="http://www.openwebdesign.com">sxc.hu</a> a great site for free imagery.</p>
+<p>I wanted to make a design that looked like a notepad on the browser that you keep you thoughts in. A really online diary. It ended up looking a like an apple mac app. Anyway, enjoy.
+</p>
+
+<p><b class="red"><a href="#">Contact</a></b></p>
+<p>If you would like to contact me for some help using this template or if you would like to known more about iFrame, <a href="mailto:callumrimmer@iframe.co.uk">Email me</a>. </p>
+
+</div>
+<div class="content_footer"></div>
+{% endblock %}
+{% block end %}
+<div id="footer">
+<p>Designed by <a href="http://www.personal-web-design.com">iFrame</a> | 양현준 2016</p>	
+</div>
+
+</div>
+
+</div>
+{% endblock %}
+
+</body>
+</html>

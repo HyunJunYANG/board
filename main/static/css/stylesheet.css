@@ -1,0 +1,177 @@
+/*----- Structure ----- */
+
+body {
+margin:0;
+padding:0;
+font-size: 12px;
+font-family: 'Tahoma';
+color:#707070;
+background:url(../image/background.gif);
+}
+
+#center {
+margin:auto;
+width:646px;
+background:url(../image/main_header.gif) no-repeat;
+}
+
+#header{
+width:646px;
+height:250px;
+}
+
+#footer{
+width:100%;
+clear:both;
+margin: 10px 0 10px 0;
+}
+
+#footer p {
+text-align:right;
+margin-right:66px;
+font-size:10px;
+}
+
+#footer a {
+color:red;
+}
+
+
+/*----- Content Boxes ----- */
+
+.content_body p {
+padding:0px 20px 10px 20px;
+text-align:justify;
+}
+
+.content_body h1 {
+font-size:15px;
+padding:10px 20px 0px 20px;
+}
+
+.content_body h2 {
+font-size:13px;
+padding:0px 20px 0px 20px;
+}
+
+.content_body a {
+color:#ff0000;
+}
+
+.red {
+color:red;
+}
+
+
+.content_header {
+width:334px;
+float:right;
+margin-right:33px;
+height:33px;
+background:url(../image/content_header.gif) no-repeat;
+}
+
+.content_body {
+width:332px;
+background:#fff;
+border-left:1px solid #ccc;
+border-right:1px solid #ccc; 
+float:right;
+margin-right:33px;
+
+}
+
+.content_footer {
+width:334px;
+float:right;
+margin-right:33px;
+height:45px;
+background:url(../image/content_footer.gif) no-repeat;
+}
+
+/*----- Nav ----- */
+
+.class nav {
+width:191px;
+}
+
+.nav_list {
+margin: 0;
+padding: 0;
+width: 191px;
+list-style: none;
+overflow: hidden;
+}
+
+.nav_list li {
+width: 191px;
+overflow: hidden;
+text-transform: uppercase;
+font-size:10px;
+font-weight:bold;
+}
+
+.nav_list a {
+color:#707070;
+text-decoration:none;
+}
+
+.li_nav_header a  {
+display: block;
+width: 191px;
+height: 34px;
+background: url(../image/nav_header.gif) no-repeat;
+}
+
+.li_nav_body a  {
+display: block;
+width: 191px;
+height: 21px;
+background: url(../image/nav_body.gif) no-repeat;
+padding-left: 25px;
+line-height:20px;
+}
+
+.li_nav_footer a  {
+display: block;
+width: 191px;
+height: 45px;
+background: url(../image/nav_footer.gif) no-repeat;
+}
+
+.li_nav_body a:hover {
+background-position:  0 -21px;
+color:#0F3D80;
+}
+
+.li_active a:active  {
+background: url(../image/nav_body.gif) no-repeat;
+background-position:  0 -42px;
+color:#0F3D80;
+}
+
+/*----- Sidebar ----- */
+
+#sidebar {
+width: 191px;
+float:left;
+}
+
+.sidebar_header {
+width: 191px;
+height: 34px;
+background: url(../image/nav_header.gif) no-repeat;
+}
+
+.sidebar_body  {
+width: 189px;
+background:#fff;
+border-left:1px solid #ccc;
+border-right:1px solid #ccc; 
+}
+
+.sidebar_footer  {
+width: 191px;
+height: 45px;
+background: url(../image/nav_footer.gif) no-repeat;
+}

@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+<head lang="ko">
+    <meta charset="UTF=8">
+    <title></title>
+</head>
+<body>
+ {% block content %}
+<h1>{{ post.title}}</h1>
+{{ post.content|linebreaks }}
+{% if post.photo %}}
+    <img src="{{ post.photo.url }}" />
+{% endif %}
+<a href="{% url 'main.views.post_edit' post.pk %}">수정하기</a>
+<a href="{% url 'main.views.board_index' %}" class="btn btn-default" type="submit" value="Submit">뒤로가기</a>
+<a href="{% url 'post_remove' pk=post.pk %}">삭제하기</a>
+
+<h3>Comments</h3>
+<a href="{% url 'main.views.comment_new' post.pk %}">댓글 쓰기</a>
+
+<ul>
+    {% for comment in post.comment_set.all %}
+        <li>
+            {{ comment.message }}
+            <small>by {{ comment.author }}, {{ comment.created_at }}</small>
+            <a href="{% url 'main.views.comment_edit' post.pk comment.pk %}">수정하기</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+</body>
